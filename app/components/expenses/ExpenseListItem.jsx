@@ -1,4 +1,6 @@
-function ExpenseListItem({ title, amount }) {
+import { Link } from '@remix-run/react';
+
+function ExpenseListItem({ id, title, amount }) {
   function deleteExpenseItemHandler() {
     // tbd
   }
@@ -11,7 +13,11 @@ function ExpenseListItem({ title, amount }) {
       </div>
       <menu className="expense-actions">
         <button onClick={deleteExpenseItemHandler}>Delete</button>
-        <a href="tbd">Edit</a>
+        {/* We need the id of the expense that should be edited */}
+        {/* <a href="/expenses/edit">Edit</a> */}
+        {/* We wanna creata a relative link where we simply point at that id */}
+        {/* Relative link */}
+        <Link to={id}>Edit</Link>
       </menu>
     </article>
   );
