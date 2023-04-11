@@ -7,7 +7,7 @@ import {
   ScrollRestoration,
 } from '@remix-run/react';
 
-import MainHeader from '~/components/navigation/MainHeader';
+// import MainHeader from '~/components/navigation/MainHeader';
 
 import sharedStyles from '~/styles/shared.css';
 
@@ -36,7 +36,7 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <MainHeader />
+        {/* <MainHeader /> */}
         <Outlet />
         <ScrollRestoration />
         <Scripts />

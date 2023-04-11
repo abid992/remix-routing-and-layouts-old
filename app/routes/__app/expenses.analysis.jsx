@@ -24,3 +24,13 @@ export default function ExpensesAnalysisPage() {
     </main>
   );
 }
+
+/**
+ * Adding Styles
+ * Styles are missing
+ * Only applied to expenses.jsx file which is not a parent of expenses route pathwise it's but from nesting perspective
+ * Solution: Pathless Layout Routes: We can add extra layer of nesting withour adding a new path to the url.
+ * __app folder This is a pathless layout route
+ * __app.jsx file
+ * This now allow us to add a layout component that does not introduce a new path to our url.
+ */
