@@ -4,6 +4,7 @@ function AuthForm() {
   return (
     <form method="post" className="form" id="auth-form">
       <div className="icon-img">
+        {/* npm i react-icons */}
         <FaLock />
       </div>
       <p>
